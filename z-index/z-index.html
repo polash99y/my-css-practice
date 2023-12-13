@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      --prymary-color:rgb(128, 105, 0);
+      --secondary-color:rgb(49, 0, 128);
+    }
+    div{
+      height: 250px;
+      width: 250px;
+    }
+    .div1{
+      /* background-color: aqua; */
+      background-color: var(--prymary-color,green);
+      position: absolute;
+      z-index: 1;
+    }
+    .div2{
+      /* background-color: blueviolet; */
+      background-color: var(--secondary-color);
+      position: absolute;
+      left: 150px;
+      top: 150px;
+      z-index: 2;
+    }
+    @media screen and (max-width:600px) {
+        :root{
+      --prymary-color:rgb(0, 128, 90);
+      --secondary-color:rgb(116, 58, 207);
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="div1"></div>
+  <div class="div2"></div>
+</body>
+</html>
