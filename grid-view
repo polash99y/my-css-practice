@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .header{
+      background-color: coral;
+      color: white;
+      padding: 1% 5%;
+      text-align: center;
+
+    }
+    .nav-menu{
+      padding: 1% 5%;
+      background-color: aquamarine;
+    }
+    .nav-menu a{
+      text-decoration: none;
+      font-size: 30px;
+      margin: 10px;
+      padding: 10px;
+      display: block;
+
+    }
+    .main{
+      padding: 1% 5%;
+      background-color: rgb(10, 207, 99);
+    }
+    .aside{
+      padding: 1% 5%;
+      background-color: rgb(9, 214, 214);
+      text-align: center;
+}
+  .footer{
+    padding: 1% 5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  [class*="col-"] {
+ width: 100%;
+ text-align: center;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.row::after{
+  content: '';
+  clear: both;
+  display: table;
+
+}
+@media screen and (min-width:768px){
+/* for desktop */
+  .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+  </style>
+</head>
+<body>
+  <div class="header col-12">
+    <h1>polash ahmed</h1>
+  </div>
+  <div class="row">
+    <div class="nav-menu col-3">
+      <a href="">home</a>
+      <a href="">menu</a>
+      <a href="">contact</a>
+    </div>
+    <div class="main col-6">
+      <h1>i am a web designer</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit totam dignissimos facilis quod nostrum mollitia sequi architecto non in!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam, saepe excepturi maiores cupiditate inventore veritatis? Sit nemo saepe accusantium, quis pariatur distinctio voluptatem nulla exercitationem repudiandae quasi, alias dolores repellat minima ducimus. Ullam numquam rerum impedit ratione ducimus facilis, voluptatem voluptas! Deleniti, maxime commodi. Repellendus laudantium architecto corrupti voluptatem natus omnis facere nesciunt minima quos facilis itaque earum nemo, quaerat aperiam suscipit! Maxime veritatis repellendus sed maiores eaque quam labore sapiente fuga, nisi obcaecati cum, atque rerum dolores laborum sit. Modi dicta necessitatibus unde, voluptates quibusdam cupiditate deserunt minima nulla reprehenderit ducimus, praesentium quod quis architecto qui illo vitae.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam pariatur facere, et animi vel temporibus quis, neque excepturi quos ut tempore? Iusto ratione magnam veritatis! Ab dolore magni neque, nesciunt dolor ea rem ut accusamus aliquam. Possimus at magnam fuga ut, dolorem voluptatum error praesentium similique dolores aspernatur autem quaerat voluptatibus ipsa minus debitis, impedit reiciendis non distinctio nobis illo, quis eum tempore repellendus? Ipsum fugiat, dolor iusto omnis, dolores pariatur neque ratione at repudiandae, eveniet numquam porro officia aliquid quia architecto est nisi voluptates ullam et soluta maxime aut sequi aliquam corrupti! Cum mollitia, iusto dolore aliquam autem nemo.</p>
+    </div>
+    <div class="aside col-3">
+      <h2>what i love</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat dignissimos samus.</p>
+      <h2>what i love</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat dignissimos samus.</p>
+      <h2>what i love</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat dignissimos samus.</p>
+      <h2>what i love</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat dignissimos samus.</p>
+
+    </div>
+    <div class="footer col-12">
+        &copy; study with polash
+      </div>
+  </div>
+</body>
+</html>
